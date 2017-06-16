@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.transition {
+  transition: background-color 0.3s ease-out, color 0.3s ease-out, border 0.3s ease-out;
+}
+
+.transition:hover {
+  transition: background-color 0.3s ease-out, color 0.3s ease-out, border 0.3s ease-out;
+}
+
+input.form {
+  display: block;
+}
+
+textarea.form {
+  resize: none;
+}
+
+.padding50 {
+  padding: 50px;
+}
+
+.padding0 {
+  padding: 0;
+}
+
+.padding5 {
+  padding: 10px;
+}
+
+.social {
+  display: block;
+  padding: 100px 0 10px 0;
+}
+
+.fb {
+  padding: 20px;
+}
+
+.apfooter {
+  background: url("../images/Layer.png") no-repeat;
+  background-size: 100%;
+  background-position: top;
+  width: auto;
+  height: 100%;
+  min-height: 750px;
+  position: relative;
+  background-color: rgba(19, 21, 39, 1);
+  color: #a6a6a8;
+}
+
+. .apfo {
+  width: 580px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.apfooter h1 {
+  font-weight: 500;
+  padding: 0 0 35px 0;
+}
+
+.form {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+  padding: 15px 30px;
+  color: #d0d0d3;
+  font-size: 14px;
+}
+
+.form:focus,
+.form:hover {
+  border: 1px solid #2affd9;
+}
+
+.form::placeholder {
+  color: #a6a6a8;
+}
+
+a.button {
+  width: 190px;
+  height: 40px;
+  border: 1px solid #2affd9;
+  text-align: center;
+  display: block;
+  margin: 30px auto;
+  line-height: 37px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+a.button:hover,
+a.butoon:active {
+  color: #FFF;
+  border-color: #2affd9;
+  background-color: #2affd9;
+}
+
+.upfoot h1 {
+  text-align: center;
+  color: #e0e0e2;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+  line-height: 22px;
+}
+
+.upfoot {
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  /* Safari */
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  /* Safari */
+  align-items: center;
+}
+
+.upfoot a {
+  line-height: 0;
+}
+
+@media screen and (max-width:991px) {
+  .social {
+    margin-top: -50px;
+  }
+  .upfoot {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width:534px) {
+  .social {
+    margin-top: -80px;
+  }
+  .fb {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width:393px) {
+  .social {
+    margin-top: -80px;
+  }
+  .fb {
+    padding: 10px;
+  }
+}

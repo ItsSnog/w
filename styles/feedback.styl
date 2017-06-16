@@ -1,0 +1,65 @@
+.feedback
+  background url(../img/footerFon.png) center no-repeat
+  padding-bottom 50px
+  .social
+    margin-top 150px
+    display flex
+    flex-wrap wrap
+    justify-content center
+    & > div
+      margin 0 15px
+      a
+        color white
+        font-size 20px
+        transition color .5s
+        &:hover
+          color #0effc9  
+  .btn
+    background transparent
+    a
+      color white
+      font-family PF Square Sans Pro
+      font-weight 300
+      letter-spacing 1px
+      text-decoration none
+    border 1px solid #0effc9
+    border-radius 30px
+    padding 5px 25px
+    transition 1s
+    margin-top 50px
+    &:hover
+      background #0effc9
+  .caption
+    h1
+      margin-top 40px
+      color #f5f5f5
+  .myForm
+    text-align center
+    margin-top 20px
+    .info
+      input
+        @media screen and (max-width: 600px)
+          width 350px
+        width 300px
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.2);
+        padding 10px 15px
+        box-sizing border-box 
+        outline none
+        transition .5s
+        margin 10px
+        &:hover, &:focus
+          border 1px solid #0effc9
+    textarea
+      @media screen and (max-width: 600px)
+        width 350px
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      background-color: rgba(0, 0, 0, 0.2);
+      width 624px
+      margin-top 20px
+      padding 10px 15px
+      outline none
+      transition .5s
+      &:hover, &:focus
+        border 1px solid #0effc9
+  

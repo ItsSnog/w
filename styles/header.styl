@@ -1,0 +1,108 @@
+*
+  padding 0
+  margin 0
+body
+  position relative
+.circle
+  position fixed
+  top 45%
+  right 1%
+  ul
+    li
+      list-style none
+      margin 20px 0
+      height 10px
+      width 10px
+      border-radius 50%
+      a
+        text-decoration none
+        border-radius 50%
+        div
+          height 5px
+          width 5px
+          background red
+          cursor pointer
+          border-radius 50%
+        
+header
+  background url('../img/bgheader.png') center no-repeat
+  background-size cover
+  padding-bottom 260px
+  padding-top 5px
+  .w_jumbotron
+    margin-top 200px
+    .w_caption
+      text-align center
+      h1, p
+        color #ffffff
+        letter-spacing 1px
+      h1
+        text-transform uppercase
+        margin 15px 0 5px 0
+        font-family Muller
+        font-weight 800
+      p
+        margin-bottom 15px
+      .btn
+        background transparent
+        a
+          color white
+          font-family PF Square Sans Pro
+          font-weight 300
+          letter-spacing 1px
+          text-decoration none
+        border 1px solid #0effc9
+        border-radius 30px
+        transition 1s
+        &:hover
+          background #0effc9
+    .social
+      display flex
+      flex-wrap wrap
+      justify-content center
+      & > div
+        margin 0 15px
+        a
+          color white
+          font-size 20px
+          transition color .5s
+          &:hover
+            color #0effc9  
+  nav
+    padding 10px
+    display flex
+    flex-wrap wrap
+    justify-content space-between
+    .w_logo
+      width 123px
+      height 24px
+      background url('../img/logo.png') center no-repeat
+      cursor pointer
+    .lang 
+      select
+        border none
+        background transparent
+        color #eaebec
+        &:focus
+          outline none
+        option
+          border none
+          background #2b3044
+         
+    .menu ul
+      display flex
+      flex-wrap wrap
+      li
+        list-style none
+        margin 0 20px
+        a
+          text-decoration none
+          font-family PF Square Sans Pro
+          color #eaebec
+          transition color .5s
+          padding-top 16px
+          font-weight 300
+          letter-spacing 1px
+          &:hover
+            border-top 2px solid #0effc9
+            color #0effc9
