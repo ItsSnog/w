@@ -1,7 +1,10 @@
 .feedback
   background url(../img/footerFon.png) center no-repeat
+  background-size cover
   padding-bottom 50px
   .social
+    @media screen and (max-width: 700px)
+      margin-top 100px
     margin-top 150px
     display flex
     flex-wrap wrap
@@ -16,30 +19,38 @@
           color #0effc9  
   .btn
     background transparent
-    a
-      color white
-      font-family PF Square Sans Pro
-      font-weight 300
-      letter-spacing 1px
-      text-decoration none
+    display block
+    margin auto
+    color white
+    font-family PF Square Sans Pro
+    font-weight 300
+    letter-spacing 1px
     border 1px solid #0effc9
     border-radius 30px
     padding 5px 25px
     transition 1s
-    margin-top 50px
+    margin-top 20px
     &:hover
       background #0effc9
+    &:focus
+      outline none
+      
   .caption
     h1
-      margin-top 40px
+      margin-top 60px
       color #f5f5f5
+      font-family Muller
+      font-weight 100
   .myForm
     text-align center
-    margin-top 20px
+    margin-top 60px
     .info
       input
-        @media screen and (max-width: 600px)
+        @media screen and (max-width: 700px)
           width 350px
+          margin-bottom 20px
+        @media screen and (max-width: 400px)
+          width 200px
         width 300px
         border: 1px solid rgba(0, 0, 0, 0.2);
         background-color: rgba(0, 0, 0, 0.2);
@@ -47,18 +58,23 @@
         box-sizing border-box 
         outline none
         transition .5s
-        margin 10px
+        margin 0 10px
+        color white
         &:hover, &:focus
           border 1px solid #0effc9
     textarea
-      @media screen and (max-width: 600px)
+      @media screen and (max-width: 700px)
         width 350px
+        margin-top 0
+      @media screen and (max-width: 400px)
+        width 200px
       border: 1px solid rgba(0, 0, 0, 0.2);
       background-color: rgba(0, 0, 0, 0.2);
       width 624px
       margin-top 20px
       padding 10px 15px
       outline none
+      color white
       transition .5s
       &:hover, &:focus
         border 1px solid #0effc9

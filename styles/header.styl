@@ -20,16 +20,25 @@ body
         div
           height 5px
           width 5px
-          background red
+          background #0effc9
           cursor pointer
           border-radius 50%
+        .active
+          height 8px
+          width 8px
         
 header
   background url('../img/bgheader.png') center no-repeat
   background-size cover
   padding-bottom 260px
-  padding-top 5px
+  .icon-bar
+    background-color #0effc9
+  .navbar
+    border none
+    padding 0
   .w_jumbotron
+    @media screen and (max-width: 766px)
+      margin-top 100px
     margin-top 200px
     .w_caption
       text-align center
@@ -73,6 +82,8 @@ header
     display flex
     flex-wrap wrap
     justify-content space-between
+    & > div
+      width 300px
     .w_logo
       width 123px
       height 24px
@@ -88,21 +99,32 @@ header
         option
           border none
           background #2b3044
-         
-    .menu ul
-      display flex
-      flex-wrap wrap
+    .navbar-collapse
+      border none
+    .navbar-collapse ul
+      display block
+      @media screen and (max-width: 765px)
+        float left!important
+        li
+          a
+            &:hover, &:focus
+              border none!important
       li
         list-style none
         margin 0 20px
+        &:hover
+          background transparent
         a
           text-decoration none
           font-family PF Square Sans Pro
           color #eaebec
           transition color .5s
-          padding-top 16px
+          padding 16px 0 0 0
           font-weight 300
           letter-spacing 1px
-          &:hover
+          box-sizing border-box
+          &:hover, &:focus
             border-top 2px solid #0effc9
             color #0effc9
+            background transparent
+          

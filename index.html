@@ -15,25 +15,30 @@
 
 <body>
   <header>
-    <div class="container">
-      <nav id="top">
-        <div class="w_logo"></div>
-        <div class="menu">
-          <ul>
-            <li><a href="#main">Главная</a></li>
-            <li><a href="#services">Услуги</a></li>
-            <li><a href="#portfolio">Портфолио</a></li>
-            <li><a href="#feedback">Контакты</a></li>
-          </ul>
-        </div>
-        <div class="lang">
-          <select>
-          <option>Рус</option>
-          <option>Eng</option>
-        </select>
+      <nav class="navbar" role="navigation" id="top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  	</button>
+            <div class="navbar-brand">
+              <img src="img/logo.png" alt="">
+
+            </div>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="menu nav navbar-nav pull-right">
+              <li><a href="#main">Главная</a></li>
+              <li><a href="#services">Услуги</a></li>
+              <li><a href="#portfolio">Портфолио</a></li>
+              <li>
+                <a href="#feedback">Контакты</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
-    </div>
     <div class="w_jumbotron">
       <div class="social">
         <div class="insta">
@@ -154,14 +159,14 @@
         <h1>Хотите с нами роботать?</h1>
       </div>
       <div class="myForm">
-        <form action="#">
-         <div class="info">
-          <input type="text" placeholder="Имя">
-          <input type="text" placeholder="Email">
+        <form id="form">
+          <div class="info">
+            <input type="text" name='name' placeholder="Имя" required>
+            <input type="text" name='email' placeholder="Email" required>
           </div>
           <textarea name="textarea" id="" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+          <button class="btn">Отправить</button>
         </form>
-        <button class="btn"><a href="#">Отправить</a></button>
       </div>
       <div class="social">
         <div class="insta">
@@ -185,7 +190,7 @@
         <img src="img/mase-logo.png" alt="">
       </div>
       <div class="copy">
-        <p>Made in Ukraine &#64; 2017</p>
+        <p>Made in Ukraine &copy; 2017</p>
       </div>
       <div class="logo">
         <img src="img/werclive-logo.png" alt="">
@@ -196,22 +201,22 @@
     <ul>
       <li>
         <a href="#top">
-          <div></div>
+          <div class="active fixpanel" id='slide_1'></div>
         </a>
       </li>
       <li>
         <a href="#services">
-          <div></div>
+          <div class='fixpanel' id='slide_2'></div>
         </a>
       </li>
       <li>
         <a href="#portfolio">
-          <div></div>
+          <div class='fixpanel' id='slide_3'></div>
         </a>
       </li>
       <li>
         <a href="#feedback">
-          <div></div>
+          <div class='fixpanel' id='slide_4'></div>
         </a>
       </li>
 
@@ -220,7 +225,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/wow.min.js"></script>
 
 </body>
 
